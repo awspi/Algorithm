@@ -33,9 +33,34 @@ for(ar of arr){ar==' '&&count++}
 
 ## Array
 
+文档 *https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array*
+
+- pop()
+  - **删除数组末尾的元素**
+- shift()
+  - **删除数组头部元素**
+- unshift()
+  - **添加元素到数组的头部**
+- push()
+  - **添加元素到数组的末尾**
+- indexOf()
+  - **找出某个元素在数组中的索引**
+
+
+
 ### Array.from()
 
 字符串转数组
+
+
+
+## Map
+
+set has get要结合使用
+
+<img src="https://cdn.nlark.com/yuque/0/2022/png/25531662/1648796715252-b821ae97-66e7-4d31-a9c6-427fcf7aab6b.png" alt="img" style="zoom:67%;" />
+
+
 
 ## [arr[l], arr[r]] = [arr[r], arr[l]]
 
