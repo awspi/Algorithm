@@ -52,6 +52,33 @@ for(ar of arr){ar==' '&&count++}
 
 字符串转数组
 
+### 单调队列
+
+```js
+ class MonoQueue {
+  queue;
+  constructor() {
+    this.queue = []; //双向队列 pop push  shift unshift 都可以用
+  }
+  enqueue(value) {//enqueue，在队尾加入元素 value,但是要把前面比新元素小的元素都删掉
+    let back = this.queue[this.queue.length - 1]//最后一位的元素
+    while (back!==undefined && back < value) {//注意back==0的情况
+      this.queue.pop()
+      back = this.queue[this.queue.length - 1]//更新
+    }
+    this.queue.push(value)
+  }
+  dequeue(value) {// dequeue，队头元素如果是value，删除它
+    if(this.front()==value) {
+      this.queue.shift();
+    }
+  }
+  front() {//返回第一位元素(最大值)
+    return this.queue[0];
+  }
+}
+```
+
 
 
 ## Map
@@ -61,6 +88,12 @@ set has get要结合使用
 <img src="https://cdn.nlark.com/yuque/0/2022/png/25531662/1648796715252-b821ae97-66e7-4d31-a9c6-427fcf7aab6b.png" alt="img" style="zoom:67%;" />
 
 
+
+map.has(x) 和x in map 不一样
+
+![QQ20220405-082359@2x](/Users/wsp/Documents/Algorithm/img/QQ20220405-082359@2x.png)
+
+![QQ20220405-082419@2x](/Users/wsp/Documents/Algorithm/img/QQ20220405-082419@2x.png)
 
 ## [arr[l], arr[r]] = [arr[r], arr[l]]
 
