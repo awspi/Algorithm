@@ -1,5 +1,7 @@
 # Js刷题笔记
 
+## forEach
+
 
 
 ## while
