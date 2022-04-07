@@ -1,5 +1,7 @@
 # Js刷题笔记
 
+## 链式操作
+
 ## forEach
 
 
@@ -17,6 +19,18 @@ while(left++<right--){
 //1 9
 //2 8
 //3 7
+```
+
+### 计次循环
+
+```js
+let curLen=10,times=0;
+while(curLen--){
+    times++;
+}
+console.log(times)
+//输出结果
+//10
 ```
 
 
