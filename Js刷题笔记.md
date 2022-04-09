@@ -45,6 +45,12 @@ If expr**1** can be converted to true, returns expr**2**; else, returns expr**1*
 for(ar of arr){ar==' '&&count++}
 ```
 
+a() && b() :如果执行a()后返回true，则执行b()并返回b的值；如果执行a()后返回false，则整个表达式返回a()的值，b()不执行；
+
+```js
+return  Math.abs(dfs(root.left)-dfs(root.right))<=1&&isBalanced(root.left)&&isBalanced(root.right);
+```
+
 
 
 ## Array
