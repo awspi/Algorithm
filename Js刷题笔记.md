@@ -2,9 +2,13 @@
 
 ## 链式操作
 
+
+
 ## forEach
 
 
+
+## ...
 
 ## while
 
@@ -49,6 +53,18 @@ a() && b() :如果执行a()后返回true，则执行b()并返回b的值；如果
 
 ```js
 return  Math.abs(dfs(root.left)-dfs(root.right))<=1&&isBalanced(root.left)&&isBalanced(root.right);
+```
+
+
+
+```
+        if(node.left){
+            if(traversal(node.left,sum-node.left.val)) return true;
+          //因为把sum - node.left->val 直接作为参数传进去，函数结束，count的数值没有改变。
+        }
+      //效果一样,代码更简洁
+      	if(node.right&&traversal(node.right,sum-node.right.val)) return true;
+        return false;
 ```
 
 
