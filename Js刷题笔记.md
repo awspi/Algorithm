@@ -69,6 +69,12 @@ return  Math.abs(dfs(root.left)-dfs(root.right))<=1&&isBalanced(root.left)&&isBa
 
 
 
+```
+ return  left !== null&&left; //不为null就返回
+```
+
+
+
 ## Array
 
 文档 *https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array*
