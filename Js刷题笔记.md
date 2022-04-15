@@ -126,6 +126,14 @@ arr.slice([begin[, end]])
 
 如果 `end` 被省略，则 `slice` 会一直提取到原数组末尾。如果 `end` 大于数组的长度，`slice` 也会一直提取到原数组末尾。
 
+### slice实现字符串指定位置插入
+
+```js
+ let str="abcdefg"
+ str=str.slice(0,5)+'要插入的字符'+str.slice(5)//插入到下标为5的位置
+//'abcde要插入的字符fg'
+```
+
 
 
 ### 单调队列
