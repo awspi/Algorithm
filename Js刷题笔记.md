@@ -102,7 +102,23 @@ return  Math.abs(dfs(root.left)-dfs(root.right))<=1&&isBalanced(root.left)&&isBa
 
 字符串转数组
 
+Array.from() 方法就是将一个**类数组对象**或者**可遍历对象**转换成一个真正的数组。
 
+
+
+那么什么是类数组对象呢？所谓类数组对象，要具备两个要求：
+
+最基本的要求就是具有 length 属性，
+其次就是属性名要是非负整数或者字符串类型的非负整数。
+虽然它表现出了数组的一些性质，但是该对象并不是由 Array 构造函数所创建的。
+
+Array.from(obj, mapFun, thisArg) 有三个参数：
+
+obj：被转化为数组的对象；
+mapFun：作用类似于数组的 map 方法，可以对每个元素进行处理，将处理后的值放入返回的数组；
+thisArg：this关键字的指向（通常都不用它）。
+
+*https://blog.csdn.net/qq_44647809/article/details/116540100*
 
 ### .slice
 
@@ -134,7 +150,7 @@ arr.slice([begin[, end]])
 //'abcde要插入的字符fg'
 ```
 
-
+### .forEach()
 
 ### 单调队列
 
