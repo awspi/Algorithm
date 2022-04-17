@@ -96,6 +96,18 @@ return  Math.abs(dfs(root.left)-dfs(root.right))<=1&&isBalanced(root.left)&&isBa
 - indexOf()
   - **找出某个元素在数组中的索引**
 
+### 二维数组
+
+js只支持一维数组,但是可以在一维数组里的元素也设置成数组
+
+```js
+const board = new Array(n);
+for (let i = 0; i < n; i++) {     // 棋盘的初始化 n*n
+  board[i] = new Array(n).fill('.');
+}
+
+```
+
 
 
 ### Array.from()
@@ -141,6 +153,22 @@ arr.slice([begin[, end]])
 `slice(1,4)` 会提取原数组中从第二个元素开始一直到第四个元素的所有元素 （索引为 1, 2, 3的元素）。如果该参数为负数， 则它表示在原数组中的倒数第几个元素结束抽取。 `slice(-2,-1)` 表示抽取了原数组中的倒数第二个元素到最后一个元素（不包含最后一个元素，也就是只有倒数第二个元素）。
 
 如果 `end` 被省略，则 `slice` 会一直提取到原数组末尾。如果 `end` 大于数组的长度，`slice` 也会一直提取到原数组末尾。
+
+### splice()
+
+splice()方法向/从数组中添加/删除项目，然后返回被删除的项目。
+
+array.splice(index,count,value....);
+index:表示从哪一个下标开始,
+count:表示删除元素的个数
+value:代表增加的元素
+
+```js
+//实现插入
+splice(index,0,item1)
+```
+
+
 
 ### slice实现字符串指定位置插入
 
